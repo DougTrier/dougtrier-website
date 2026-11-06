@@ -134,7 +134,7 @@ body{background-color:var(--paper);transition:background-color .55s,color .55s}
 @media(forced-colors:active){.hero-actions .button,.hero-actions .meet-link,.download-link,.project-links .text-link,.flip-cta{background:ButtonFace;color:ButtonText;border-color:ButtonText;box-shadow:none}.hero-actions a:focus-visible,.download-link:focus-visible,.project-links a:focus-visible{outline-color:Highlight}}
 
 /* Approved transparent PNG artwork; native links retain every destination. */
-.hero-actions .image-button,.download-actions .image-button,.project-links .image-button,.elsewhere .image-button,.flip-tape .flip-cta.image-button{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:220px;max-width:100%;min-height:44px;padding:0;border:0;border-radius:8px;background:none;box-shadow:none;color:var(--ink);text-decoration:none;line-height:1.4;transition:filter .18s,transform .18s}
+.hero-actions .image-button,.download-actions .image-button,.project-links .image-button,.elsewhere .image-button,.footer .image-button,.flip-tape .flip-cta.image-button{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:220px;max-width:100%;min-height:44px;padding:0;border:0;border-radius:8px;background:none;box-shadow:none;color:var(--ink);text-decoration:none;line-height:1.4;transition:filter .18s,transform .18s}
 .button-art{display:block;position:relative;width:100%;aspect-ratio:736/160;overflow:hidden;pointer-events:none;flex-shrink:0}
 .image-button .button-art,.hero-actions .button .button-art{display:block;width:100%;height:auto;aspect-ratio:736/160;margin:0;padding:0;border:0;border-radius:0;background:none;font:inherit;line-height:inherit}
 .image-button .sr-only,.hero-actions .button .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;background:none}
@@ -149,13 +149,15 @@ body{background-color:var(--paper);transition:background-color .55s,color .55s}
 .download-link .download-detail{display:block;width:100%;height:auto;margin:0;border:0;border-radius:0;background:none;font:500 10px/1.5 var(--sans);color:var(--muted)}
 .project-links .image-button{width:190px}
 .elsewhere{gap:12px}.elsewhere .eyebrow{width:100%;margin-bottom:3px}
-.elsewhere .image-button{width:190px}
+.elsewhere .image-button,.footer .image-button{width:190px}
 .flip-tape .flip-cta.image-button{position:absolute;width:190px;min-height:0;top:-49px;right:-3%;gap:0}
 .hero-mix .mix-heading{padding-bottom:22px}
 .flip-tape .flip-cta.image-button>span:first-child{font-size:inherit}
-@media(hover:hover){.hero-actions .image-button:hover,.download-actions .image-button:hover,.project-links .image-button:hover,.elsewhere .image-button:hover,.flip-tape:hover .flip-cta.image-button{background:none;border:0;box-shadow:none;filter:brightness(1.12);transform:translateY(-1px)}}
-.hero-actions .image-button:active,.download-actions .image-button:active,.project-links .image-button:active,.elsewhere .image-button:active,.flip-tape:active .flip-cta.image-button{filter:brightness(.92);transform:translateY(1px);box-shadow:none}
+@media(hover:hover){.hero-actions .image-button:hover,.download-actions .image-button:hover,.project-links .image-button:hover,.elsewhere .image-button:hover,.footer .image-button:hover,.flip-tape:hover .flip-cta.image-button{background:none;border:0;box-shadow:none;filter:brightness(1.12);transform:translateY(-1px)}}
+.hero-actions .image-button:active,.download-actions .image-button:active,.project-links .image-button:active,.elsewhere .image-button:active,.footer .image-button:active,.flip-tape:active .flip-cta.image-button{filter:brightness(.92);transform:translateY(1px);box-shadow:none}
 .image-button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
-@media(max-width:550px){.hero-actions .image-button{width:245px}.download-actions{grid-template-columns:1fr}.download-actions .image-button,.download-actions .image-button:only-child{width:260px;max-width:100%}.download-detail{font-size:11px}.project-links .image-button,.elsewhere .image-button{width:190px}.flip-tape .flip-cta.image-button{width:150px;top:-41px}.hero-mix .mix-heading{padding-bottom:24px}}
+@media(max-width:550px){.hero-actions .image-button{width:245px}.download-actions{grid-template-columns:1fr}.download-actions .image-button,.download-actions .image-button:only-child{width:260px;max-width:100%}.download-detail{font-size:11px}.project-links .image-button,.elsewhere .image-button,.footer .image-button{width:190px}.flip-tape .flip-cta.image-button{width:150px;top:-41px}.hero-mix .mix-heading{padding-bottom:24px}}
 @media(prefers-reduced-motion:reduce){.image-button{transition:none!important;transform:none!important}}
-@media(forced-colors:active){.image-button .button-art,.hero-actions .button .button-art{display:none}.image-button .sr-only,.hero-actions .button .sr-only{position:static;width:auto;height:auto;margin:0;clip:auto;overflow:visible;white-space:normal}.hero-actions .image-button,.download-actions .image-button,.project-links .image-button,.elsewhere .image-button,.flip-tape .flip-cta.image-button{background:ButtonFace;border:1px solid ButtonText;color:ButtonText;padding:8px}}
+@media(forced-colors:active){.image-button .button-art,.hero-actions .button .button-art{display:none}.image-button .sr-only,.hero-actions .button .sr-only{position:static;width:auto;height:auto;margin:0;clip:auto;overflow:visible;white-space:normal}.hero-actions .image-button,.download-actions .image-button,.project-links .image-button,.elsewhere .image-button,.footer .image-button,.flip-tape .flip-cta.image-button{background:ButtonFace;border:1px solid ButtonText;color:ButtonText;padding:8px}}
+
+.footer{align-items:center}@media(max-width:550px){.footer{align-items:flex-start}}
