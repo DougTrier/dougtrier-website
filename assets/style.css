@@ -161,3 +161,16 @@ body{background-color:var(--paper);transition:background-color .55s,color .55s}
 @media(forced-colors:active){.image-button .button-art,.hero-actions .button .button-art{display:none}.image-button .sr-only,.hero-actions .button .sr-only{position:static;width:auto;height:auto;margin:0;clip:auto;overflow:visible;white-space:normal}.hero-actions .image-button,.download-actions .image-button,.project-links .image-button,.elsewhere .image-button,.footer .image-button,.flip-tape .flip-cta.image-button{background:ButtonFace;border:1px solid ButtonText;color:ButtonText;padding:8px}}
 
 .footer{align-items:center}@media(max-width:550px){.footer{align-items:flex-start}}
+
+/* The main navigation uses the same theme artwork and native destinations. */
+.header nav{gap:10px;align-items:center}
+.header nav .image-button{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;width:130px;max-width:100%;min-height:44px;padding:0;border:0;border-radius:7px;background:none;box-shadow:none;line-height:1;transition:filter .18s,transform .18s}
+@media(hover:hover){.header nav .image-button:hover{filter:brightness(1.12);transform:translateY(-1px)}}
+.header nav .image-button:active{filter:brightness(.92);transform:translateY(1px)}
+@media(max-width:900px) and (min-width:551px){.header{flex-wrap:wrap}.header nav{margin-left:auto}}
+@media(max-width:550px){.header{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px 12px}.header .brand{grid-column:1/-1;grid-row:1;width:fit-content}.header nav{display:contents}.header nav .image-button{width:100%;grid-row:2}.header nav .image-button:first-child{grid-column:1}.header nav .image-button:nth-child(2){grid-column:2}.header nav .image-button:last-child{display:inline-flex;width:115px;grid-column:2;grid-row:1;justify-self:end}}
+@media(forced-colors:active){.header nav .image-button{border:1px solid ButtonText;background:ButtonFace;color:ButtonText;padding:8px}}
+
+@media(max-width:380px){.header .brand-sub{display:none}}
+
+@media(max-width:380px){.header .brand .jewel-case{width:47px;height:43px}.header .brand{gap:8px}}
