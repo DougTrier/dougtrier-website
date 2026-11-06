@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dougtrier.com/sitemap.xml
